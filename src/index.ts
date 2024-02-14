@@ -138,3 +138,14 @@ user2.name = 'Harold' // pode mudar
 //user2.setId(5) // nao pode mudar
 
 console.log(`User:`, user)
+
+// IndexSignatures !
+class HotelRooms{
+    [roomName:string]:string;
+}
+let room = new HotelRooms()
+room.A202 = 'Ana'
+room.A069 = 'Gisela'
+room.B69A = 'Opa'
+
+console.log(room)
