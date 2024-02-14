@@ -154,7 +154,7 @@ console.log(room)
 
 class Saudacao extends MC {
     override greet(event: string = 'party'): string {
-        return `Bem vindo ao ${event}`;
+        return `Bem vindo ao ${event} (${super.greet(event)})`;
     }
 }
 
@@ -163,4 +163,4 @@ let mcHammer = new MC();
 console.log(mcHammer.greet('show'))
 // Saudacao
 let saudar = new Saudacao()
-console.log(saudar.greet('espetaculo'))
+console.log(saudar.greet('Brasil'))
