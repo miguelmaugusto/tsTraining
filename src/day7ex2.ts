@@ -78,7 +78,7 @@ console.log(capitalize(`nifty ${multiply(5, 10)}`));
 
 // Day 7 - Exercise 5
 
-function layEggs(quantity:number, color:string) {
+function layEggs(quantity:number, color:string):void {
     console.log(`You just laid ${quantity} ${color} eggs. Good job!`);
 }
 
