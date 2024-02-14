@@ -149,3 +149,18 @@ room.A069 = 'Gisela'
 room.B69A = 'Opa'
 
 console.log(room)
+
+////// Override
+
+class Saudacao extends MC {
+    override greet(event: string = 'party'): string {
+        return `Bem vindo ao ${event}`;
+    }
+}
+
+// Greet
+let mcHammer = new MC();
+console.log(mcHammer.greet('show'))
+// Saudacao
+let saudar = new Saudacao()
+console.log(saudar.greet('espetaculo'))
